@@ -28,6 +28,9 @@ public class MealsUtil {
     );
 
     public static List<MealTo> getTos(Collection<Meal> meals, int caloriesPerDay) {
+
+        /**УБРАТЬ!!!*/
+        meals=MealsUtil.meals;
         return filterByPredicate(meals, caloriesPerDay, meal -> true);
     }
 
