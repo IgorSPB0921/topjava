@@ -3,6 +3,7 @@ package ru.javawebinar.topjava.repository.jdbc;
 import org.springframework.stereotype.Repository;
 import ru.javawebinar.topjava.model.Meal;
 import ru.javawebinar.topjava.repository.MealRepository;
+import ru.javawebinar.topjava.util.MealsUtil;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -27,7 +28,9 @@ public class JdbcMealRepository implements MealRepository {
 
     @Override
     public List<Meal> getAll(int userId) {
-        return null;
+
+
+        return MealsUtil.meals; /**В ИСХОДНОМ СТОСТОЯНИИ ВОЗВРАЩАЕТ NULL!*/
     }
 
     @Override
